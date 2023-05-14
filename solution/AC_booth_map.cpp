@@ -33,7 +33,8 @@ int main() {
     ios::sync_with_stdio(false) ;
     cin.tie(0) ; cout.tie(0) ;
 
-    int n, q, ans = 0 ;
+    int n, q ;
+    long long ans = 0 ;
     string s ;
     unordered_map<string, int> mp ;
 

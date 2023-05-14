@@ -153,7 +153,8 @@ char s[M] ;
 int main() {
     init() ;
 
-    int n, q, ans = 0 ;
+    int n, q ;
+    long long ans = 0 ;
 
     scanf("%d%d", &n, &q) ;
     for(int i=0; i<n; ++i) {
@@ -165,7 +166,7 @@ int main() {
         // printf("[debug] %d: %s %lld\n", i+1, s, hs) ;
     }
 
-    printf("%d\n", ans) ;
+    printf("%lld\n", ans) ;
     int k ;
     for(int i=0; i<q; ++i) {
         scanf("%d %s", &k, s) ;
@@ -178,6 +179,6 @@ int main() {
             subtract(hs) ;
             ans -= count(hs) ;
         }
-        printf("%d\n", ans) ;
+        printf("%lld\n", ans) ;
     }
 }
