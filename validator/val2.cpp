@@ -2,9 +2,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int N = 2000 ;
+int N = 1000000 ;
 int Q = 0 ;
-int M = 2000 ;
+int M = 1000000 ;
 
 int main() {
 	registerValidation();

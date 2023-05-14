@@ -1,16 +1,23 @@
+/*
+
+1. rolling hash for M rotations 
+2. sum M cubic values as blueprint
+
+WA
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define M 1000010
 #define Q 0xCC12
-#define P 136352001050389LL  // a 47 bit prime generated via PyCryptodome
+#define P 1163867213LL // a 31 bit prime generated via PyCryptodome 
+// should ensure P * P <= MAX_LL
 
 long long Qpow[M] ;
 long long hs[M] ;
-
-// random weight
-int randw[26] = {50157, 32807, 27670, 10194, 44207, 8305, 33422, 1871, 37522, 22115, 41208, 19853, 32566, 34987, 36005, 26181, 49379, 2170, 20374, 18406, 43139, 44422, 43398, 44844, 39250, 24922} ;
 
 long long hash(char s[]) {
     int n = strlen(s) ;
@@ -18,15 +25,14 @@ long long hash(char s[]) {
     // Calculate the hashes of s[0, n-1], s[1, (n)%n], ..., s[n, (2n-1)%n]
     hs[0] = 0 ;
     for(int i=0; i<n; ++i)
-        hs[0] = (hs[0] * Q + randw[s[i]-'a']) % P ;
+        hs[0] = (hs[0] * Q + s[i]) % P ;
     for(int i=1; i<n; ++i) 
-        hs[i] = ((hs[i-1] - randw[s[i-1]-'a'] * Qpow[n-1] % P + P) % P * Q + randw[s[i-1]-'a']) % P ;
+        hs[i] = ((hs[i-1] - s[i-1] * Qpow[n-1] % P + P) % P * Q + s[i-1]) % P ;
 
     // Calculate the hash of the n hashes as the blueprint
     long long ret = 0 ;
     for(int i=0; i<n; ++i) {
-        if (ret < hs[i])
-            ret = hs[i] ; 
+        ret = (ret + hs[i] * hs[i] % P * hs[i]) % P ;
     }    
     return ret ;
 } 

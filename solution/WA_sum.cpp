@@ -13,17 +13,18 @@ WA on every subtask
 #include <stdlib.h>
 #include <string.h>
 
-#define M 2010
+#define M 1000010
 #define Q 0xCC12
 #define P 136352001050389LL  // a 47 bit prime generated via PyCryptodome
 
 long long Qpow[M] ;
+long long hs[M] ;
 
 long long hash(char s[]) {
     int n = strlen(s) ;
 
     // Calculate the hashes of s[0, n-1], s[1, (n)%n], ..., s[n, (2n-1)%n]
-    long long hs[M] = {} ;
+    hs[0] = 0 ;
     for(int i=0; i<n; ++i)
         hs[0] = (hs[0] * Q + s[i]) % P ;
     for(int i=1; i<n; ++i) 
@@ -143,11 +144,12 @@ int count(long long x) {
     return node_count(x, root) ;
 }
 
+char s[M] ;
+
 int main() {
     init() ;
 
     int n, q, ans = 0 ;
-    char s[M] ;
 
     scanf("%d%d", &n, &q) ;
     for(int i=0; i<n; ++i) {

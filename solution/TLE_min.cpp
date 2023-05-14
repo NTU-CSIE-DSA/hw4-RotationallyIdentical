@@ -1,3 +1,16 @@
+/*
+
+use the minima of the M hashes as the blueprint
+
+TLE: BST could become skew tree if the input is monotonic
+e.g. 
+- aaa
+- aab
+- aac
+- ...
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,23 +22,20 @@
 long long Qpow[M] ;
 long long hs[M] ;
 
-// random weight
-int randw[26] = {50157, 32807, 27670, 10194, 44207, 8305, 33422, 1871, 37522, 22115, 41208, 19853, 32566, 34987, 36005, 26181, 49379, 2170, 20374, 18406, 43139, 44422, 43398, 44844, 39250, 24922} ;
-
 long long hash(char s[]) {
     int n = strlen(s) ;
 
     // Calculate the hashes of s[0, n-1], s[1, (n)%n], ..., s[n, (2n-1)%n]
     hs[0] = 0 ;
     for(int i=0; i<n; ++i)
-        hs[0] = (hs[0] * Q + randw[s[i]-'a']) % P ;
+        hs[0] = (hs[0] * Q + s[i]) % P ;
     for(int i=1; i<n; ++i) 
-        hs[i] = ((hs[i-1] - randw[s[i-1]-'a'] * Qpow[n-1] % P + P) % P * Q + randw[s[i-1]-'a']) % P ;
+        hs[i] = ((hs[i-1] - s[i-1] * Qpow[n-1] % P + P) % P * Q + s[i-1]) % P ;
 
     // Calculate the hash of the n hashes as the blueprint
-    long long ret = 0 ;
+    long long ret = P ;
     for(int i=0; i<n; ++i) {
-        if (ret < hs[i])
+        if (ret > hs[i])
             ret = hs[i] ; 
     }    
     return ret ;

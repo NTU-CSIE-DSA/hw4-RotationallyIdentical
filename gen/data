@@ -57,141 +57,165 @@ repeat 50 50 50 4 200 ootoo
 
 @subtask s2 
 manual sample1.in
-rand 2000 0 2000 0 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 0 2000 0 3 ou
-rand 2000 0 2000 0 4 ou
-rand 2000 0 2000 0 5 uo
-rand 2000 0 2000 0 0 x
-rand 2000 0 5 0 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 0 5 0 1 slf 
-rand 2000 0 5 0 1 jp
-rand 2000 0 5 0 2 cd
-rand 2000 0 5 0 2 ef
-rand 2000 0 5 0 3 ij
-rand 2000 0 5 0 3 kl
-rand 2000 0 5 0 4 zo
-rand 2000 0 5 0 1 kkklllj 
-rand 2000 0 4 0 1 ab
-rand 2000 0 4 0 1 ba
-rand 2000 0 4 0 2 su
-rand 2000 0 4 0 2 ol
-rand 2000 0 4 0 3 sp
-rand 2000 0 4 0 3 ds
-rand 2000 0 3 0 1 pq
-rand 2000 0 3 0 1 so
-rand 2000 0 3 0 2 sl
-rand 2000 0 3 0 2 uo
-rand 2000 0 3 0 3 iu
-rand 2000 0 3 0 3 qt
-rand 2000 0 3 0 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 0 3 0 0 ccucumber
-rand 2000 0 2 0 1 efghijklmnop
-rand 2000 0 2 0 3 os
-rand 2000 0 2 0 0 du
-rand 2000 0 1 0 1 sssssdddddffffz
-rand 2000 0 1 0 2 ac
-rand 2000 0 1 0 3 wa
-repeat 2000 0 2000 4 0 ce
-repeat 2000 0 2000 4 500 ab
-repeat 2000 0 2000 4 500 sp
-repeat 10 0 2000 -3 200 ij
-repeat 2000 0 2000 4 0 pee
-repeat 2000 0 2000 4 200 doo
-repeat 2000 0 2000 4 200 oop
-repeat 2000 0 2000 4 200 tot
-repeat 2000 0 2000 4 200 ret
-repeat 2000 0 2000 4 200 poop
-repeat 2000 0 2000 4 200 oool
-repeat 2000 0 2000 4 200 ppip
-repeat 2000 0 2000 4 200 jojoj
-repeat 2000 0 2000 4 200 tooot
-repeat 2000 0 2000 4 200 ootoo
-repeat 2000 0 2000 4 200 qqqqp
+rand 2 0 500000 0 0 abcdefghijklmnopqrstuvwxyz
+rand 1000 0 1000 0 0 abcdefghijklmnopqrstuvwxyz
+rand 1000 0 1000 0 3 ou
+rand 1000 0 1000 0 4 ou
+rand 1000 0 1000 0 5 uo
+rand 1000 0 1000 0 0 x
+rand 20000 0 50 0 0 abcdefghijklmnopqrstuvwxyz
+rand 20000 0 50 0 0 sadfjlklasldfkjasdiuoiji
+rand 20000 0 50 0 1 ty
+rand 20000 0 50 0 3 gh
+rand 100000 0 10 0 0 qwertyiuopadfglkjhmnzbxcv
+rand 100000 0 10 0 0 sdoiogjoasldhgljklfhashaboasdkjlbaiuhaieuhbailbiadhailhil
+rand 200000 0 5 0 0 abcdefghijklmnopqrstuvwxyz
+rand 200000 0 5 0 1 slf 
+rand 200000 0 5 0 1 jp
+rand 200000 0 5 0 2 ef
+rand 200000 0 5 0 3 ij
+rand 200000 0 5 0 4 zo
+rand 250000 0 4 0 1 ab
+rand 250000 0 4 0 2 su
+rand 250000 0 4 0 3 sp
+rand 333333 0 3 0 1 pq
+rand 333333 0 3 0 2 sl
+rand 333333 0 3 0 3 iu
+rand 333333 0 3 0 0 abcdefghijklmnopqrstuvwxyz
+rand 500000 0 2 0 1 en
+rand 500000 0 2 0 2 du
+rand 500000 0 2 0 3 os
+rand 1000000 0 1 0 0 sdflkjghwroiuyxcvbmnz
+rand 1000000 0 1 0 2 vc
+rand 1000000 0 1 0 2 ac
+rand 1000000 0 1 0 3 wa
+repeat 2 0 500000 0 0 loop
+repeat 10 0 100000 0 1000 ce
+repeat 1000 0 1000 0 500 sp
+repeat 1000 0 1000 0 500 pee
+repeat 1000 0 1000 0 500 tot
+repeat 1000 0 1000 0 200 ret
+repeat 1000 0 1000 0 200 oool
+repeat 1000 0 1000 0 200 ootoo
+repeat 1000 0 1000 0 200 qqqqp
+repeat 10000 0 100 0 0 ce
+repeat 10000 0 100 0 500 ab
+repeat 10000 0 100 0 200 doo
+repeat 10000 0 100 0 200 oop
+repeat 10000 0 100 0 200 poop
+repeat 10000 0 100 0 200 ppip
+repeat 10000 0 100 0 200 jojoj
+repeat 10000 0 100 0 200 tooot
+repeat 20000 0 50 0 100 sdf
+repeat 20000 0 50 0 100 oou
+mono 333333 0 3 4 0
+mono 333333 0 3 4 1
+mono 250000 0 4 4 0
+mono 250000 0 4 4 1
+mono 200000 0 5 4 0
+mono 200000 0 5 4 1
+mono 166666 0 6 4 0
+mono 166666 0 6 4 1
 
 @subtask s3 
 manual sample1.in
-rand 2000 2000 3 0 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 2000 3 0 0 qwertyuiopasdfghjklzxcvbnm
-rand 2000 2000 3 0 0 ccucumber
-rand 2000 2000 3 3 3 ou
-rand 2000 2000 3 3 4 ou
-rand 100 2000 3 -5 4 yr
-rand 2000 2000 3 0 0 x
-rand 2000 2000 3 4 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 2000 3 4 0 bz
-rand 2000 2000 3 4 0 sd
-rand 2000 2000 3 4 0 yt
-rand 2000 2000 3 4 1 sssssdddddffffz
-rand 2000 2000 3 4 1 kkklllj 
-rand 2000 2000 3 4 1 slf 
-rand 2000 2000 3 4 1 jp
-rand 2000 2000 3 4 2 cd
-rand 2000 2000 3 4 2 ef
-rand 2000 2000 3 4 3 ij
-rand 2000 2000 3 4 3 kl
-rand 2000 2000 3 4 4 zo
-rand 100 2000 3 -3 2 ue
-rand 2000 2000 3 4 2 ac
-rand 2000 2000 3 4 3 wa
-repeat 2000 2000 3 4 0 pee
-repeat 100 2000 3 -3 200 eel
-repeat 2000 2000 3 4 200 doo
-repeat 2000 2000 3 4 200 oop
-repeat 2000 2000 3 4 200 tot
-repeat 2000 2000 3 4 200 ret
+rand 166666 166666 3 0 0 abcdefghijklmnopqrstuvwxyz
+rand 166666 166666 3 0 0 qwertyuiopasdfghjklzxcvbnm
+rand 166666 166666 3 0 0 ccucumber
+rand 166666 166666 3 3 3 ou
+rand 166666 166666 3 3 4 ou
+rand 1000 31000 3 -2 0 sjakldfioaufoiasdfhhs
+rand 1000 31000 3 -2 4 yr
+rand 166666 166666 3 0 0 x
+rand 166666 166666 3 4 0 abcdefghijklmnopqrstuvwxyz
+rand 166666 166666 3 4 0 bz
+rand 166666 166666 3 4 0 sd
+rand 166666 166666 3 4 0 yt
+rand 166666 166666 3 4 1 sssssdddddffffz
+rand 166666 166666 3 4 1 kkklllj 
+rand 166666 166666 3 4 1 slf 
+rand 166666 166666 3 4 1 jp
+rand 166666 166666 3 4 2 cd
+rand 166666 166666 3 4 2 ef
+rand 166666 166666 3 4 3 ij
+rand 166666 166666 3 4 3 kl
+rand 166666 166666 3 4 4 zo
+rand 1000 31000 3 -2 2 ue
+rand 166666 166666 3 4 2 ac
+rand 166666 166666 3 4 3 wa
+repeat 166666 166666 3 4 0 pee
+repeat 2000 300000 3 -1 200 eel
+repeat 166666 166666 3 4 200 doo
+repeat 166666 166666 3 4 200 oop
+repeat 166666 166666 3 4 200 tot
+repeat 166666 166666 3 4 200 ret
+mono 166666 166666 3 4 0
+mono 166666 166666 3 4 1
+mono 2 333330 3 4 0
+mono 2 333330 3 4 1
 
 @subtask s4
 @include samples
 @include s1
 @include s2
 @include s3
-rand 2000 2000 2000 0 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 2000 2000 3 3 ou
-rand 2000 2000 2000 3 4 ou
-rand 2000 2000 2000 3 5 uo
-rand 100 2000 2000 -5 4 yr
-rand 2000 2000 2000 0 0 x
-rand 2000 2000 5 4 0 abcdefghijklmnopqrstuvwxyz
-rand 2000 2000 5 4 1 slf 
-rand 2000 2000 5 4 1 jp
-rand 2000 2000 5 4 2 cd
-rand 2000 2000 5 4 2 ef
-rand 2000 2000 5 4 3 ij
-rand 2000 2000 5 4 3 kl
-rand 2000 2000 5 4 4 zo
-rand 2000 2000 5 4 1 kkklllj 
-rand 2000 2000 4 4 1 ab
-rand 2000 2000 4 4 1 ba
-rand 2000 2000 4 4 2 su
-rand 2000 2000 4 4 2 ol
-rand 2000 2000 4 4 3 sp
-rand 2000 2000 4 4 3 ds
-rand 2000 2000 4 4 4 wo
-rand 2000 2000 3 4 1 gh
-rand 2000 2000 3 4 1 du
-rand 2000 2000 3 4 2 qo
-rand 2000 2000 3 4 2 yr
-rand 2000 2000 3 4 3 eu
-rand 2000 2000 3 4 3 xn
-rand 2000 2000 2 4 1 efghijklmnop
-rand 2000 2000 2 4 3 os
-rand 100 2000 2 -3 2 ue
-rand 2000 2000 1 4 1 sssssdddddffffz
-rand 2000 2000 1 4 2 ac
-rand 2000 2000 1 4 3 wa
-repeat 2000 2000 2000 4 0 ce
-repeat 2000 2000 2000 4 500 ab
-repeat 2000 2000 2000 4 500 sp
-repeat 100 2000 2000 -3 200 ij
-repeat 2000 2000 2000 4 0 pee
-repeat 2000 2000 2000 4 200 doo
-repeat 2000 2000 2000 4 200 oop
-repeat 2000 2000 2000 4 200 tot
-repeat 2000 2000 2000 4 200 ret
-repeat 2000 2000 2000 4 200 poop
-repeat 2000 2000 2000 4 200 oool
-repeat 2000 2000 2000 4 200 ppip
-repeat 2000 2000 2000 4 200 jojoj
-repeat 2000 2000 2000 4 200 tooot
-repeat 2000 2000 2000 4 200 ootoo
-repeat 2000 2000 2000 4 200 qqqqp
+rand 2 1 300000 0 0 r
+rand 2 1 300000 0 4 sd
+rand 2 1 300000 0 0 abcdefghijklmnopqrstuvwxyz
+rand 10 10 50000 0 0 abcdefghijklmnopqrstuvwxyz
+rand 10 10 50000 0 4 ao
+rand 10 10 50000 0 100 qp
+rand 500 500 1000 0 0 abcdefghijklmnopqrstuvwxyz
+rand 10000 10000 50 0 0 u
+rand 10000 10000 50 0 1 xv
+rand 10000 10000 50 0 2 nm
+rand 10000 10000 50 0 3 zp
+rand 10000 10000 50 0 0 ouioerhuishdiofuhihoytq
+rand 50000 50000 10 0 0 qwertyiuopadfglkjhmnzbxcv
+rand 50000 50000 10 0 0 laskdjfoiuhjnkalvbhioauwefiasdlhklahsbihiuwoerhiu
+rand 50000 50000 10 0 1 eu
+rand 50000 50000 10 0 2 oq
+rand 50000 50000 10 0 3 sd
+rand 100000 100000 5 4 0 abcdefghijklmnopqrstuvwxyz
+rand 100000 100000 5 4 1 slf 
+rand 100000 100000 5 4 1 jp
+rand 100000 100000 5 4 2 cd
+rand 100000 100000 5 4 3 ij
+rand 100000 100000 5 4 4 zo
+rand 100000 100000 5 4 1 kkklllj 
+rand 125000 125000 4 4 1 ab
+rand 125000 125000 4 4 2 ol
+rand 125000 125000 4 4 3 ds
+rand 125000 125000 4 4 4 wo
+rand 250000 250000 2 4 1 uz
+rand 250000 250000 2 4 2 vi
+rand 250000 250000 2 4 3 os
+rand 500000 500000 1 4 1 sssssdddddffffz
+rand 500000 500000 1 4 2 ac
+rand 500000 500000 1 4 3 wa
+repeat 2 2 250000 0 0 ow
+repeat 2 2 250000 0 0 oddlooop
+repeat 5 5 100000 4 1000 ce
+repeat 500 500 1000 4 500 sp
+repeat 500 500 1000 4 500 pee
+repeat 500 500 1000 4 200 ret
+repeat 500 500 1000 4 200 ootoo
+repeat 500 500 1000 4 200 qqqqp
+repeat 5000 5000 100 4 0 ce
+repeat 5000 5000 100 4 500 ab
+repeat 5000 5000 100 4 200 doo
+repeat 5000 5000 100 4 200 oop
+repeat 5000 5000 100 4 200 poop
+repeat 5000 5000 100 4 200 ppip
+repeat 5000 5000 100 4 200 jojoj
+repeat 5000 5000 100 4 200 tooot
+repeat 10000 10000 50 0 100 sdf
+repeat 10000 10000 50 0 100 oou
+repeat 10000 90000 10 0 100 xux
+repeat 10000 90000 10 0 200 op
+mono 125000 125000 4 4 0
+mono 125000 125000 4 4 1
+mono 100000 100000 5 4 0
+mono 100000 100000 5 4 1
+mono 83333 83333 6 4 0
+mono 83333 83333 6 4 1

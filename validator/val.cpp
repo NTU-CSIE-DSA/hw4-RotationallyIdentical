@@ -2,16 +2,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int N = 2000 ;
-int Q = 2000 ;
-int M = 2000 ;
+int N = 1000000 ;
+int Q = 1000000 ;
+int M = 1000000 ;
+long long nqm = 1000000 ;
 
 int main() {
 	registerValidation();
 	int n = inf.readInt(1, N) ; inf.readSpace() ;
 	int q = inf.readInt(0, Q) ; inf.readEoln() ;
 	
-	multiset<string> st ;
+	unordered_multiset<string> st ;
 	string rgx = "[a-z]{1," + to_string(M) + "}" ;
 	string s ;
 	int m = - 1 ;
@@ -32,9 +33,12 @@ int main() {
 		if (k == 1) {
 			st.insert(s) ;
 		} else {
-			ensuref(st.count(s) > 0, "op %d: string is not in S!\n", i+1) ;
-			st.erase(st.lower_bound(s)) ;
+			auto it = st.find(s) ;
+			ensuref(it != st.end(), "op %d: string is not in S!\n", i+1) ;
+			st.erase(it) ;
 		}
 	}
+
+	ensuref(1LL* (n+q)*m <= nqm, "(n+q)m too large!\n") ;
 	inf.readEof() ;
 }

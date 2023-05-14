@@ -1,40 +1,33 @@
 /*
 
-1. rolling hash for M rotations 
-2. sum the reciprocals of the M values as blueprint
+use the maxima of the M hashes as the blueprint
 
-correct, but slow.
-O(NlogNlogN)
+TLE: BST could become skew tree if the input is monotonic
+e.g. 
+- aaa
+- aab
+- aac
+- ...
 
 */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define M 2010
+#define M 1000010
 #define Q 0xCC12
-// #define P 136352001050389LL  // a 47 bit prime generated via PyCryptodome
-#define P 1163867213LL // a 31 bit prime generated via PyCryptodome 
-// should ensure P * P <= MAX_LL
+#define P 136352001050389LL  // a 47 bit prime generated via PyCryptodome
 
 long long Qpow[M] ;
-
-long long POW(long long x, long long k) {
-    long long ret = 1 ;
-    while(k) {
-        if (k & 1) ret = (ret * x) % P ;
-        x = (x * x) % P ; 
-        k >>= 1 ;
-    }
-    return ret ;
-}
+long long hs[M] ;
 
 long long hash(char s[]) {
     int n = strlen(s) ;
 
     // Calculate the hashes of s[0, n-1], s[1, (n)%n], ..., s[n, (2n-1)%n]
-    long long hs[M] = {} ;
+    hs[0] = 0 ;
     for(int i=0; i<n; ++i)
         hs[0] = (hs[0] * Q + s[i]) % P ;
     for(int i=1; i<n; ++i) 
@@ -43,7 +36,8 @@ long long hash(char s[]) {
     // Calculate the hash of the n hashes as the blueprint
     long long ret = 0 ;
     for(int i=0; i<n; ++i) {
-        ret = (ret + POW(hs[i], P-2)) % P ;
+        if (ret < hs[i])
+            ret = hs[i] ; 
     }    
     return ret ;
 } 
@@ -154,11 +148,12 @@ int count(long long x) {
     return node_count(x, root) ;
 }
 
+char s[M] ;
+
 int main() {
     init() ;
 
     int n, q, ans = 0 ;
-    char s[M] ;
 
     scanf("%d%d", &n, &q) ;
     for(int i=0; i<n; ++i) {
