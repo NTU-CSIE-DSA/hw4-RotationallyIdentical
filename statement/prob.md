@@ -1,6 +1,6 @@
 ## Problem Description
 
-Remember the game developer, Little Cucumber, and the magical fairy in the house of Demeter Sphynx Abyssinian? Little Cucumber successfully released his game (King of DSA), but the magical fairy... ([See more](https://www.youtube.com/watch?v=dQw4w9WgXcQ))
+Do you recall the game developer, Little Cucumber, who recently launched his game? He invited a magical fairy to give it a try, but to his surprise, the fairy cast a bizarre rotating spell on the game... ([See more](https://www.youtube.com/watch?v=dQw4w9WgXcQ))
 
 Long story short, you have to maintain a set ($S$) of strings. Initially, there are $N$ strings in $S$, the $i$-th string is $t_i$. There are $Q$ operations, each operation is one of the following two:
 
@@ -28,7 +28,7 @@ The output should consist of $Q+1$ lines. The first line should contain an integ
 - $2 \le N \le 10^6$
 - $0 \le Q \le 10^6$
 - $1 \le |t_i| = |t_j| = M \le 10^6$
-- $t_i$ and $t_j$ consists of only lowercase latin letters.
+- $t_i$ and $t_j$ consists of only lowercase Latin letters.
 - $(N+Q)M \le 10^6$ (the total string length does not exceed $10^6$.)
 
 ### Subtask 1 (10 pts)
@@ -86,3 +86,7 @@ cucumber
 11
 7
 ```
+
+## Hints
+The problem setter and testers had come up with three different solutions, including one linear time [determinstic algorithm](https://en.wikipedia.org/wiki/Deterministic_algorithm). You are encourage to try whatever you think may be possible, and keep on trying different approaches after receiving an AC. GLHF :-)
+
