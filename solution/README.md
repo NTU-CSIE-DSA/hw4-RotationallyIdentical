@@ -5,7 +5,7 @@ Calculate the $M$ hash values of each rotation of a string. Then, we need to has
 
 For each insert / remove operation, we insert / remove a value, representing the blueprint, into a multiset. To calculate the number of pairs, we can simply count the identical numbers in the multiset. The multiset can be implemented via any BST. It does not have to be a balanced BST, since the input value (our hash value) can be generated randomly.
 
-Time complexity: $O((N+Q)M\log (N+Q))$
+Time complexity: $O((N+Q)(M + \log (N+Q)))$
 
 ### Hash Functions
 - Good Hashes
