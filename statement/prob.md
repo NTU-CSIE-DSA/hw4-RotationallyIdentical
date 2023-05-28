@@ -2,10 +2,10 @@
 
 Do you recall the game developer, Little Cucumber, who recently launched his game? He invited a magical fairy to give it a try, but to his surprise, the fairy cast a bizarre rotating spell on the game... ([See more](https://www.youtube.com/watch?v=dQw4w9WgXcQ))
 
-Long story short, you have to maintain a set of strings $S$. At the beginning, $S$ has $N$. Let $t_i$ denote the $i$-th string in $S$, $1 \le i \le N$. Then, $Q$ operations will be performed on $S$, where each operation can be one of the following two:
+Long story short, you have to maintain a multiset of strings $S$. At the beginning, $S$ has $N$ strings. Let $t_i$ denote the $i$-th string in $S$, $1 \le i \le N$. Then, $Q$ operations will be performed on $S$, where each operation can be one of the following two:
 
 1. `insert(t_j)`: insert the string $t_j$ into $S$.
-2. `remove(t_j)`: remove the string $t_j$ from $S$, it is guaranteed that $t_j$ is in $S$. 
+2. `remove(t_j)`: remove one instance of the string $t_j$ from $S$, it is guaranteed that at least one $t_j$ is in $S$. 
 
 Consider two strings, $A$ and $B$, of the same length $L$. $A$ and $B$ are *rotationally identical* if and only if there exists $k, 1 \le k \le L$ such that 
 $$
@@ -87,6 +87,24 @@ cucumber
 10
 11
 7
+```
+
+### Sample Input 3
+```
+2 3
+walnut
+walnut
+1 walnut
+1 walnut
+2 walnut
+```
+
+### Sample Output 3
+```
+1
+3
+6
+3
 ```
 
 ## Hints
